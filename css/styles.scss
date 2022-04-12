@@ -1,0 +1,193 @@
+*
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Roboto' 'Shrikhand';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap')
+}
+body{
+    font-family: 'Roboto';
+    a{
+        text-decoration: none;    
+        color: black;
+    }
+}
+$color-primary:#9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
+$color-font-light :#7E7E7E;
+$color-background-dark:#353535;
+$color-background-light:#EAEAEA;
+
+ /*********************** LE HEADER ***************************/
+
+.logo{
+    display: block;
+    background-color: white;
+    margin: auto;
+    width: 45%;
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+}
+
+.localisation{
+    background-color: $color-background-light;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+        &__icon{
+        padding-right: 15px;
+        }
+        &__text{
+            font-weight: bold;
+        }
+
+}
+
+/*********************** DESCRIPTION ***************************/
+
+
+.description{
+    background-color: $color-background-light;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    p{
+        font-weight: lighter;
+        font-size: 18px;
+    }
+}
+.btn{
+    background-color: $color-secondary;
+    border-radius: 50px;
+    margin-top: 15px;
+    padding: 15px 20px;
+    color: white;
+}
+/*********************** FONCTIONNEMENT ***************************/
+
+.section__titre{
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    h2{
+        padding-bottom: 8px;
+    }
+}
+
+.fcard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    background-color: $color-background-light;
+    padding: 10px 15px 10px 0px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: relative;
+    left: 7px;
+    &__num{
+        color: white;
+        background-color: $color-primary;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        padding-left: 5px;
+        margin-right: 20px;
+        position: relative;
+        right: 10px;
+        }
+    &__icon{
+        color: $color-font-light;
+        margin-right: 20px;
+    }
+    }
+    
+    /*********************** RESTAURANTS ***************************/
+
+.restaurants{
+    background-color: $color-background-light;
+    display: flex;
+    flex-direction: column;
+
+}
+.card{
+        background-color: white;
+        height: 250px;
+        border-radius: 15px;
+        margin-left: 1%;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        &__img{
+            height: 70%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0px 0px;
+        }
+        &__icon{
+            font-size: 25px;
+        }
+        p{
+            margin: 0%;
+            font-weight:lighter;
+            font-size: 16px;
+        }
+        h3{
+            margin: 0%;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            font-size: 18px;
+        }
+        &__text__icon{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+    }
+ /*********************** FOOTER ***************************/
+
+ .footer{
+     background-color: $color-background-dark;
+     color: white;
+     padding-left: 20px;
+     padding-bottom: 25px;
+     margin-bottom: 0%;
+     div{
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+     }
+     p{
+         margin: 4px 0px;
+     }
+     a{
+         color: white;
+         margin-top: 4px;
+     }
+     &__logo{
+    margin: 0%;
+    font-family: 'Shrikhand';
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+    &__icon{
+        padding-right: 10px;
+        font-size: 13px;
+    }
+    &__icon2{
+        padding-right: 8px;
+        font-size: 11px;
+    }
+
+ }
