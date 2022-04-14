@@ -22,6 +22,12 @@ $color-font-light :#7E7E7E;
 $color-background-dark:#353535;
 $color-background-light:#EAEAEA;
 
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+
  /*********************** LE HEADER ***************************/
 
 .logo{
@@ -37,10 +43,8 @@ $color-background-light:#EAEAEA;
 .localisation{
     background-color: $color-background-light;
     color: black;
-    display: flex;
-    flex-direction: row;
+    @include flex-row-center;
     justify-content: center;
-    align-items: center;
         &__icon{
         padding-right: 15px;
         }
@@ -84,9 +88,7 @@ $color-background-light:#EAEAEA;
 }
 
 .fcard{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flex-row-center;
     border-radius: 20px;
     background-color: $color-background-light;
     padding: 10px 15px 10px 0px;
@@ -147,10 +149,8 @@ $color-background-light:#EAEAEA;
             font-size: 18px;
         }
         &__text__icon{
-            display: flex;
-            flex-direction: row;
+            @include flex-row-center;
             justify-content: space-between;
-            align-items: center;
             padding-left: 10px;
             padding-right: 20px;
         }
@@ -164,9 +164,7 @@ $color-background-light:#EAEAEA;
      padding-bottom: 25px;
      margin-bottom: 0%;
      div{
-         display: flex;
-         flex-direction: row;
-         align-items: center;
+         @include flex-row-center;
      }
      p{
          margin: 4px 0px;
